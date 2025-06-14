@@ -101,9 +101,6 @@ Logged:
 - Volume and origin of failed login attempts.
 - Outcome of each analysis query.
 
-> 📸 Screenshot:
-> ![Internet-facing VM Check](../assets/Screenshot%202025-06-14%20121838.png)
-
 ---
 
 ## 🔄 7. Improvement
