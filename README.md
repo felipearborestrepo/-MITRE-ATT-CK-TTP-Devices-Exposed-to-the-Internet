@@ -77,10 +77,6 @@ Findings:
 - No overlap of failed and successful logons.
 - One legitimate account had a single success with no prior failures.
 
-> 📸 Screenshot:
-> ![Targeted Account Failures](../assets/Screenshot%202025-06-14%20121730.png)
-> ![Verified Legit IP Logins](../assets/Screenshot%202025-06-14%20121838.png)
-
 ---
 
 ## 🛡️ 5. Response
