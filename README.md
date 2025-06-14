@@ -11,7 +11,7 @@ During a routine maintenance cycle, our security team received a directive to as
 Older systems without account lockout policies may have been targeted by brute-force login attacks. If successful, this could allow lateral movement within the network.
 
 > 📸 Screenshot:
-> ![Preparation - Architecture Diagram](../assets/Screenshot%202025-06-14%20103627.png)
+![Screenshot 2025-06-14 103627](https://github.com/user-attachments/assets/dad94bc4-8e4e-4b7f-b90d-54a0f9b7b6bd)
 
 ---
 
@@ -23,7 +23,7 @@ Older systems without account lockout policies may have been targeted by brute-f
 - Queried `DeviceLogonEvents` to gather information on failed and successful login attempts from remote IPs.
 
 > 📸 Screenshot:
-> ![Advanced Hunting: DeviceInfo](../assets/Screenshot%202025-06-14%20114504.png)
+![Screenshot 2025-06-14 114504](https://github.com/user-attachments/assets/af7a6f9b-f4e1-409f-884b-8396b344f303)
 
 ---
 
@@ -44,7 +44,7 @@ DeviceLogonEvents
 | order by Attempts
 ```
 > 📸 Screenshot:
-> ![Failed Logons](../assets/Screenshot%202025-06-14%20114725.png)
+![Screenshot 2025-06-14 114725](https://github.com/user-attachments/assets/721c3a55-4483-49a3-b027-43466a996c1d)
 
 ### 🔍 Query 2: Logon success from suspicious IPs
 ```kusto
@@ -55,7 +55,7 @@ DeviceLogonEvents
 | where RemoteIP has_any(RemoteIPsInQuestion)
 ```
 > 📸 Screenshot:
-> ![Success from Bad IPs](../assets/Screenshot%202025-06-14%20121716.png)
+![Screenshot 2025-06-14 121716](https://github.com/user-attachments/assets/4009a907-2d04-4700-95af-e9bd574f37a5)
 
 ---
 
@@ -132,23 +132,6 @@ Logged:
 | T1489            | Service Stop (if required as containment method)        |
 
 ---
-
-## 📂 Directory Structure
-```
-vm-brute-force-investigation/
-│
-├── README.md
-├── assets/
-│   ├── Screenshot 2025-06-14 103627.png
-│   ├── Screenshot 2025-06-14 114504.png
-│   ├── Screenshot 2025-06-14 114725.png
-│   ├── Screenshot 2025-06-14 121716.png
-│   ├── Screenshot 2025-06-14 121730.png
-│   └── Screenshot 2025-06-14 121838.png
-```
-
-> ✅ **Interview Tip:** Emphasize your ability to conduct structured investigations, leverage KQL, and communicate findings using MITRE ATT&CK for threat alignment.
-
 **Author:** Felipe Restrepo  
 **Date:** June 14, 2025  
 **Tools:** Microsoft Defender for Endpoint, Azure Sentinel, KQL
